@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MoonBucks | Coffee on the Chain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome" />
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="nav">
+        <a href="#" class="logo">MoonBucks</a>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://testnet.bscscan.com/token/tokenholderchart/0x775696541ca4b61d6b9da9d488561478e0b990dc" target="_blank">Scoreboard</a></li>
+          <li><a href="#" class="active">Account</a></li>
+          <a class="connect-button" id="connect-button" onclick="connect()"
+            >Connect Wallet</a
+          >
+        </ul>
+      </div>
+
+      <div id="hero-menu">
+        <h2>Account</h2>
+      </div>
+    </section>
+    <section class="user">
+      <h3>Connected Wallet: </h3>
+      <span id="wallet-address"></span>
+    </section>
+
+    <section class="moonbucks-value">
+      <div class="moonbucks-value-child">
+        <img src="images/moonbucks.png" alt="" width="200px">
+      </div>
+
+      <div class="moonbucks-value-child">
+        <div class="top">
+          <h1>Moon Bucks Earned</h3>
+        </div>
+
+        <div class="bottom">
+          <span id="token-balance"></span>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="rewards">
+      <div class="box-container">
+        <div class="box">
+          <img src="images/frap.png" alt="matcha" />
+          <strong
+            ><p>Matcha - <span>100 Moon Bucks to unlock</span></p></strong
+          >
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <button class="reward-btn" id="reward1" onclick="voucher1()">unlock</button>
+        </div>
+
+        <div class="box">
+          <img src="images/caramel.png" alt="white mocha" />
+          <strong
+            ><p>White Mocha - <span>200 Moon Bucks to unlock</span></p></strong
+          >
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="reward-btn" id="reward2" onclick="voucher2()">
+            unlock
+          </button>
+        </div>
+      
+
+      
+        <div class="box">
+          <img src="images/unicorn.png" alt="unicorn" />
+          <strong
+            ><p>Unicorn Burst - <span>300 Moon Bucks to unlock</span></p></strong
+          >
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="reward-btn" id="reward3" onclick="voucher3()">unlock</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="vouchers">
+      <h1>Vouchers Collected</h1>
+      <div id="photo-box">
+        <div id="photo-gallery">
+
+        </div>
+        <div id="photo-gallery2">
+
+        </div>
+        <div id="photo-gallery3">
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </body>
+  <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript"
+  ></script>
+  <script src="script.js" defer></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"
+    defer
+  ></script>
+</html>

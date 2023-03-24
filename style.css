@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: white;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav .logo{
+    background: -webkit-linear-gradient(#dddddd, #b2b2b2);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li .active{
+    background-color: white;
+    color: #2b1055;
+}
+
+
+#connect-button {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 12px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+#connect-button:hover {
+    background-color: white;
+    color: #2b1055;
+    display: inline-block;
+	text-decoration: none;
+	border: 1px solid white;
+	padding: 12px 12px;
+	position: relative;
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h2{
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 48px;
+}
+
+#hero p{
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 16px;
+    transform: translateY(60px);
+}
+
+#btn{
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    border-radius: 40px;
+    background:white;
+    color: #2b1055;
+    font-size: 1.5em;
+    transform: translateY(120px);
+}
+
+.drinks {
+    height: 75vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.drinks .textbox {
+    position: relative;
+    max-width: 600px;
+}
+
+.drinks .textbox h2 {
+    color: black;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.drinks .textbox h2 span {
+    color: #00a66b;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.drinks .textbox p{
+    color: black;
+}
+
+.drinks .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #00a66b;
+    color: white;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.drinks .imgbox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.drinks .imgbox img {
+    max-width: 600px;
+}
+
+footer {
+    background-color:#dddddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer .col{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: black;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid #00a66b;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #00a66b;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+#menu{
+    min-height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-menu{
+    position: relative;
+    width: 100%;
+    height: 12.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-menu h2{
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 48px;
+    padding-bottom: 50px;
+}
+
+#menu ul li a:hover,
+#menu ul li .active{
+    background-color: white;
+    color: #2b1055;
+}
+
+.order-form {
+    height: 70vh;
+}
+
+.box img {
+    max-height: 300px;
+    border-radius: 50%;
+    background-color: #1e3930;
+}
+
+.menu-heading {
+    margin-top: 80px;
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.box-container {
+padding-top: 60px;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 20px;
+}
+
+.box {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.order-form .button {
+    justify-content: right;
+}
+
+.receipt {
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.receipt button{
+    margin-top: 5px;
+    background-color: #00a66b; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+}
+
+.hidden {
+    display: none;
+}
+
+.redeem-instructions{
+    margin-top: 40px;
+}
+
+.redeem-instructions p{
+    margin-top: 40px;
+}
+
+.user {
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.moonbucks-value{
+    margin: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.moonbucks-value-child {
+    display: inline-block;
+    height: 200px;
+}
+
+.moonbucks-value-child .top {
+    margin-top: 30px;
+}
+
+.moonbucks-value-child .bottom {
+    margin-top: 20px;
+}
+
+.moonbucks-value-child span{
+    font-size: 4em;
+}
+
+
+#vouchers{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#photo-box {
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: 4em 1em;
+    justify-content: space-around;
+}
+
+#photo-gallery {
+    border: 2px solid #088178;
+    height: 500px;
+    width: 370px;
+}
+
+#photo-gallery2 {
+    border: 2px solid #088178;
+    height: 500px;
+    width: 370px;
+}
+
+#photo-gallery3 {
+    border: 2px solid #088178;
+    height: 500px;
+    width: 370px;
+}
+
+#menu-btn{
+    width: 270px;
+    text-decoration: none;
+    height: 80px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #1e3930;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.submit-button {
+    margin:110px 200px;
+    text-align: right;
+}
+
+
+#checkout *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+#checkout .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 50vh;
+    padding-bottom: 20px;
+}
+
+#checkout .container form{
+    padding:5px;
+    width:1000px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+#checkout .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#checkout .container form .row .col{
+    flex:1 1 250px;
+    padding: 10px;
+}
+
+#checkout .container form .row .col .title{
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#checkout .container form .row .col .inputBox{
+    margin: 10px 2px;
+}
+
+#checkout .container form .row .col .inputBox span{
+    margin-bottom: 1px;
+    display:block;
+}
+
+#checkout .container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+#checkout .container form .row .col .inputBox input:focus{
+    border:1px solid black;
+}
+
+#checkout .container form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+
+#checkout .container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+
+#checkout .container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+#checkout .container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size:17px ;
+    background: #088178;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#checkout .container form .submit-btn:hover{
+    background: #088178;
+}
+
+#disclaimer {
+    text-align: center;
+}
+
+#receipt {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.sign-button {
+    margin-top: 60px;
+}
+
+#sign-btn {
+    width: 270px;
+    text-decoration: none;
+    height: 80px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #1e3930;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mint-button {
+    margin-top: 60px;
+}
+
+#mint-btn {
+    width: 270px;
+    text-decoration: none;
+    height: 80px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #1e3930;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.instuctions {
+    margin: 40px 500px;
+    text-align: center;
+}
+
+.instuctions h1{
+    font-size: 2.5em;
+}
+
+.instuctions h2{
+    font-size: 2em;
+}
+
+.instuctions p{
+    font-size: 1.5em;
+}
+
+#network-btn {
+    width: 200px;
+    text-decoration: none;
+    height: 80px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #1e3930;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.reward-btn {
+    margin: 10px;
+    width: 150px;
+    text-decoration: none;
+    height: 80px;
+    border: none;
+    outline: none;
+    background: #1e3930;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#rewards {
+    border-top: #1e3930;
+}

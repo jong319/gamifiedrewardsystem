@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MoonBucks | Coffee on the Chain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome" />
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="nav">
+        <a href="#" class="logo">MoonBucks</a>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a
+              href="https://testnet.bscscan.com/token/tokenholderchart/0x775696541ca4b61d6b9da9d488561478e0b990dc"
+              target="_blank"
+              >Scoreboard</a
+            >
+          </li>
+          <li><a href="account.html">Account</a></li>
+          <a class="connect-button" id="connect-button" onclick="connect()"
+            >Connect Wallet</a
+          >
+        </ul>
+      </div>
+      <div id="hero-menu">
+        <h2>Menu</h2>
+      </div>
+    </section>
+    <form class="order-form">
+      <!------Drinks----->
+      <h2 class="menu-heading">Our Popular Products</h2>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/caramel.png" alt="white mocha" />
+          <strong
+            ><p>White Mocha - <span>$5</span></p></strong
+          >
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <input type="number" name="mocha" id="mocha" min="0" value="0" />
+        </div>
+
+        <div class="box">
+          <img src="images/frap.png" alt="matcha" />
+          <strong
+            ><p>Matcha - <span>$6</span></p></strong
+          >
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <input id="matcha" type="number" name="matcha" value="0" min="0" />
+        </div>
+
+        <div class="box">
+          <img src="images/unicorn.png" alt="unicorn" />
+          <strong
+            ><p>Unicorn Burst - <span>$7</span></p></strong
+          >
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <input id="unicorn" type="number" name="unicorn" value="0" min="0" />
+        </div>
+      </div>
+      <div class="submit-button">
+        <a href="payment.html" id="menu-btn">Submit</a>
+      </div>
+    </form>
+  </body>
+
+  <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript"
+  ></script>
+  <script src="script.js" defer></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"
+    defer
+  ></script>
+
+  <footer class="section-p1">
+    <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong>MoonBucks HQ</p>
+      <p>
+        <strong>Email:</strong
+        ><a href="mailto:moon@bucks.com">Moon@Bucks.com</a>
+      </p>
+      <p><strong>Hours:</strong> 10:00 - 22:00, Mon - Sun</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="images/app.jpg" alt="" />
+        <img src="images/play.jpg" alt="" />
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="images/pay.png" alt="" />
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2022 MoonBucks. All rights reserved.</p>
+    </div>
+  </footer>
+</html>

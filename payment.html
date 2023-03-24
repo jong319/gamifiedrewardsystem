@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MoonBucks | Coffee on the Chain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome" />
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="nav">
+        <a href="#" class="logo">MoonBucks</a>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a
+              href="https://testnet.bscscan.com/token/tokenholderchart/0x775696541ca4b61d6b9da9d488561478e0b990dc"
+              target="_blank"
+              >Scoreboard</a
+            >
+          </li>
+          <li><a href="account.html">Account</a></li>
+          <a class="connect-button" id="connect-button" onclick="connect()"
+            >Connect Wallet</a
+          >
+        </ul>
+      </div>
+
+      <div id="hero-menu">
+        <h2>Payment</h2>
+      </div>
+    </section>
+    <section id="checkout">
+      <div class="container">
+        <form action="receipt.html">
+          <div class="row">
+            <div class="col">
+              <h2 class="title">Billing Address</h2>
+
+              <div class="inputBox">
+                <span>Full name :</span>
+                <input
+                  type="text"
+                  name="cust_name"
+                  id="cust_name"
+                  placeholder="Jonas Ong"
+                  required
+                />
+              </div>
+              <div class="inputBox">
+                <span>Email :</span>
+                <input
+                  type="email"
+                  name="cust_email"
+                  id="cust_email"
+                  placeholder="example@example.com"
+                  required
+                />
+              </div>
+              <div class="inputBox">
+                <span>Address :</span>
+                <input
+                  type="text"
+                  name="cust_address"
+                  id="cust_address"
+                  placeholder="Full address"
+                  required
+                />
+              </div>
+              <div class="inputBox">
+                <span>City :</span>
+                <input type="text" placeholder="Singapore" required />
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>Phone :</span>
+                  <input
+                    type="text"
+                    name="cust_phone"
+                    id="cust_phone"
+                    placeholder="1234 5678"
+                    required
+                  />
+                </div>
+                <div class="inputBox">
+                  <span>Zip code :</span>
+                  <input type="text" placeholder="123 456" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <h2 class="title">Payment</h2>
+
+              <div class="inputBox">
+                <span>Cards Accepted :</span>
+                <img src="images/pay.png" alt="" />
+              </div>
+              <div class="inputBox">
+                <span>Name on card :</span>
+                <input
+                  type="text"
+                  name="cc_name"
+                  id="cc_name"
+                  placeholder="Jonas Ong"
+                  required
+                />
+              </div>
+              <div class="inputBox">
+                <span>Credit Card Number :</span>
+                <input
+                  type="text"
+                  name="cc_num"
+                  id="cc_num"
+                  placeholder="1111-2222-3333-4444"
+                  required
+                />
+              </div>
+              <div class="inputBox">
+                <span>Exp Month :</span>
+                <input type="text" placeholder="Jan" required />
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>Exp Year :</span>
+                  <input type="text" placeholder="2022" required />
+                </div>
+                <div class="inputBox">
+                  <span>CVV :</span>
+                  <input
+                    type="text"
+                    name="cvv"
+                    id="cvv"
+                    placeholder="123"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div id="disclaimer">
+            <p>Connect your wallet before payment to receive member rewards</p>
+          </div>
+
+          <input type="submit" value="Check Out" class="submit-btn" />
+        </form>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript"
+  ></script>
+  <script src="script.js" defer></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"
+    defer
+  ></script>
+</html>

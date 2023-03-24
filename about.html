@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MoonBucks | Coffee on the Chain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome" />
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="nav">
+        <a href="#" class="logo">MoonBucks</a>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="https://testnet.bscscan.com/token/tokenholderchart/0x775696541ca4b61d6b9da9d488561478e0b990dc" target="_blank">Scoreboard</a></li>
+          <li><a href="account.html">Account</a></li>
+          <a class="connect-button" id="connect-button" onclick="connect()"
+            >Connect Wallet</a
+          >
+        </ul>
+      </div>
+      <div id="hero-menu">
+        <h2>About</h2>
+      </div>
+    </section>
+
+    <section class="instuctions">
+      <h1>Join our members program in 3 easy steps!</h1>
+      <br />
+      <h2>Step 1: Download Metamask Wallet</h1>
+      <br />
+      <p>
+        Go to <a href="https://metamask.io/">https://metamask.io/</a> and click on “Download”. Choose your
+        preferred browser or mobile application and install the MetaMask
+        extension. MetaMask supports iOS, Android native apps along with Chrome,
+        Firefox, Brave and Edge browser extensions.
+      </p>
+      <img src="images/metamask.webp" alt="metamask" /><br>
+      <p>Click on the MetaMask extension and click on “Get Started”. 
+        You can either import an existent wallet using the seed phrase or create a new one. 
+        Click on “Create a Wallet” and create a strong password for your wallet.</p><br>
+      <img src="images/metamask5.webp" alt="metamask"><br>
+      <p>Securely store the seed phrase for your wallet. </p> <br> 
+      <p>Never share your seed phrase or your private key to anyone or any site, unless you want them to have full control over your funds.</p><br>
+      <img src="images/metamask6.webp" alt=""><br><br><br>
+      <h2>Step 2: Add Binance Smart Chain Testnet to your network</h2>
+      <p>To add the network manually, open MetaMask, navigate to “Settings” and choose “Network” and click the “Add Network” button</p><br>
+      <img src="images/network1.webp" alt=""><br> <br><br>
+      <p>Here are the necessary parameters: <br>
+        <strong>Name of the network: </strong>Binance Smart Chain Testnet <br>
+        <strong> URL: </strong>https://data-seed-prebsc-1-s1.binance.org:8545 <br>
+        <strong>Symbol</strong> BNB <br>
+        <strong>Chain ID:</strong> 97 <br>
+        <strong>Block URL: </strong>https://testnet.bscscan.com
+      </p> <br>
+      <p>Or simply click the button below to add the network automatically</p><br>
+      <button id="network-btn"onclick="switchChain()">Add Network</button><br><br><br>
+      <h2>Step 3: Get some free tBnB to transact on the network</h2>
+      <p> Go to <a href="https://testnet.bnbchain.org/faucet-smart">https://testnet.bnbchain.org/faucet-smart</a> and enter your metamask wallet address. 
+        Click the "Give me BNB" button and you will receive the tBnB within a few minutes.</p><br>
+        <img src="images/network2.png" alt=""><br><br><br>
+      
+      <h2>All Done!</h2><br>
+      <p>Simply connect your wallet to our website using our "Connect" button and head over to our Accounts page to view your rewards</p>
+
+    </section>
+  </body>
+
+  <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript"
+  ></script>
+  <script src="script.js" defer></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"
+    defer
+  ></script>
+
+  <footer class="section-p1">
+    <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong>MoonBucks HQ</p>
+      <p>
+        <strong>Email:</strong
+        ><a href="mailto:moon@bucks.com">Moon@Bucks.com</a>
+      </p>
+      <p><strong>Hours:</strong> 10:00 - 22:00, Mon - Sun</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="images/app.jpg" alt="" />
+        <img src="images/play.jpg" alt="" />
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="images/pay.png" alt="" />
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2022 MoonBucks. All rights reserved.</p>
+    </div>
+  </footer>
+</html>

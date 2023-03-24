@@ -1,0 +1,10 @@
+var fs = require('fs')
+
+for (var i =0; i < 27; i++) {
+	var json = {}
+	json.name = "Unicorn Burst Voucher #" + i;
+	json.description = "Moon Bucks Unicorn Burst Voucher redeemable at our physical stores islandwide, only usable once!";
+	json.image = "ipfs://bafybeifuxj5txdg62q5ewboap3fnofr42yhwknvtaaostnozwvbx73fqwi/unicorn.png";
+
+	fs.writeFileSync('' + i,JSON.stringify(json));
+}
