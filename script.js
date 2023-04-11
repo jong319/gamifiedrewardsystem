@@ -1088,12 +1088,16 @@ const checkTokenBalance = async () => {
 const mintReward = async() => {
   let mintContract = new ethers.Contract(libcAddress, libcABI, provider.getSigner());
 
-  let tx = await mintContract.mint(
+  try{ await mintContract.mint(
     rewardAmount,
     time,
     signature)
 
 	mintBtn.innerHTML = "Reward Minted!"
+  } catch (err) {
+	error = err.data.message;
+	alert(error);
+  }
 
 }
 
@@ -1106,18 +1110,33 @@ const transferMB = async() => {
 
 const voucher1 = async() => {
 		let voucherContract = new ethers.Contract(voucherAddress, voucherABI, provider.getSigner());
-		let tx = await voucherContract.safeMint();
+		try {
+			await voucherContract.safeMint();
+		} catch (err) {
+			error = err.data.message;
+			alert(error);
+		}
 
 }
 
 const voucher2 = async() => {
 		let voucherContract = new ethers.Contract(voucher2Address, voucherABI, provider.getSigner());
-		let tx = await voucherContract.safeMint();
+		try {
+			await voucherContract.safeMint();
+		} catch (err) {
+			error = err.data.message;
+			alert(error);
+		}
 }
 
 const voucher3 = async() => {
 		let voucherContract = new ethers.Contract(voucher3Address, voucherABI, provider.getSigner());
-		let tx = await (voucherContract.safeMint());
+		try {
+			await voucherContract.safeMint();
+		} catch (err) {
+			error = err.data.message;
+			alert(error);
+		}
 
 }
 
