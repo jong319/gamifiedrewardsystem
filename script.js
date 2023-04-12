@@ -1141,18 +1141,14 @@ const voucher3 = async() => {
 }
 
 const balanceOfVoucher = async() => {
-	try{
 		let voucherContract = new ethers.Contract(voucherAddress, voucherABI, provider);
 
 		const tokenId = await voucherContract.tokenOfOwnerByIndex(accounts[0],0);
 		const tokenURI = await voucherContract.tokenURI(tokenId);
-		const metadataRes = await fetch(`https://ipfs.io/ipfs/${tokenURI.substr(7)}`);
+		const metadataRes = await fetch(`https://gateway.ipfs.io/ipfs/${tokenURI.substr(7)}`);
 		const metadata1 = await metadataRes.json();
 
 		document.getElementById("photo-gallery").innerHTML = createElement(metadata1);
-	} catch(e) {
-		err = createEmpty();
-	}
 }
 
 const balanceOfVoucher2 = async() => {
@@ -1160,7 +1156,7 @@ const balanceOfVoucher2 = async() => {
 
 	const tokenId2 = await voucher2Contract.tokenOfOwnerByIndex(accounts[0],0);
 	const tokenURI2 = await voucher2Contract.tokenURI(tokenId2);
-	const metadataRes2 = await fetch(`https://ipfs.io/ipfs/${tokenURI2.substr(7)}`);
+	const metadataRes2 = await fetch(`https://gateway.ipfs.io/ipfs/${tokenURI2.substr(7)}`);
 	const metadata2 = await metadataRes2.json();
 
 	document.getElementById("photo-gallery2").innerHTML = createElement(metadata2);
@@ -1171,7 +1167,7 @@ const balanceOfVoucher3 = async() => {
 
 	const tokenId3 = await voucher3Contract.tokenOfOwnerByIndex(accounts[0],0);
 	const tokenURI3 = await voucher3Contract.tokenURI(tokenId3);
-	const metadataRes3 = await fetch(`https://ipfs.io/ipfs/${tokenURI3.substr(7)}`);
+	const metadataRes3 = await fetch(`https://gateway.ipfs.io/ipfs/${tokenURI3.substr(7)}`);
 	const metadata3 = await metadataRes3.json();
 
 	document.getElementById("photo-gallery3").innerHTML = createElement(metadata3);
@@ -1181,7 +1177,7 @@ const balanceOfVoucher3 = async() => {
 function createElement(metadata) {
 	return `        <div>
 	<h3>${metadata.name}</h3>
-	<img src="https://ipfs.io/ipfs/${metadata.image.substr(7)}" width="360" height="360" alt="">
+	<img src="https://gateway.ipfs.io/ipfs/${metadata.image.substr(7)}" width="360" height="360" alt="">
 	<p>${metadata.description}</p>
   </div>`
 }
